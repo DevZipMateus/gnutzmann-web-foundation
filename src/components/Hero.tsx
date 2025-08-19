@@ -1,64 +1,124 @@
 
-import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Code, Palette, Zap } from 'lucide-react';
+import { ArrowRight, Award, Users, Clock } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section className="bg-background py-20 lg:py-32">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
-            Criamos Experiências
-            <span className="text-primary block">Digitais Incríveis</span>
-          </h1>
-          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Desenvolvemos sites modernos, aplicações web e soluções digitais que 
-            conectam sua marca ao seu público de forma eficiente e impactante.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg">
-              <Link to="/contato">
-                Comece Seu Projeto
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
-            </Button>
-            <Button variant="outline" size="lg" asChild>
-              <Link to="/servicos">Ver Nossos Serviços</Link>
-            </Button>
-          </div>
-        </div>
-
-        {/* Features Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20">
-          <div className="text-center p-6 rounded-lg bg-card border border-border hover:shadow-lg transition-shadow">
-            <div className="bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center mx-auto mb-4">
-              <Code className="h-6 w-6 text-primary" />
+    <section id="inicio" className="relative pt-24 pb-20 lg:pt-32 lg:pb-32 bg-gradient-to-br from-primary/5 to-primary/10 overflow-hidden">
+      {/* Background decoration */}
+      <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
+      
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* Content */}
+          <div className="animate-fade-in">
+            <div className="inline-flex items-center px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
+              <Award className="h-4 w-4 mr-2" />
+              Desde 1995 em Pelotas
             </div>
-            <h3 className="text-xl font-semibold text-foreground mb-2">Desenvolvimento</h3>
-            <p className="text-muted-foreground">
-              Código limpo, moderno e otimizado usando as melhores tecnologias do mercado.
+            
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6">
+              Gnutzmann
+              <span className="text-primary block">Contabilidade</span>
+              <span className="text-2xl md:text-3xl lg:text-4xl font-normal text-muted-foreground">
+                e Consultoria
+              </span>
+            </h1>
+            
+            <p className="text-xl text-muted-foreground mb-8 max-w-xl leading-relaxed">
+              Com profissionais que acompanham nossa trajetória há anos, nossa maior 
+              característica é a <strong className="text-foreground">aproximação com os clientes</strong>, 
+              criando um vínculo de confiança.
             </p>
+            
+            <div className="flex flex-col sm:flex-row gap-4 mb-12">
+              <Button asChild size="lg" className="btn-primary">
+                <a 
+                  href="https://wa.me/5353984024960?text=Olá! Gostaria de conhecer os serviços da Gnutzmann Contabilidade."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Falar conosco via WhatsApp"
+                >
+                  Fale Conosco
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </a>
+              </Button>
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="btn-outline"
+                onClick={() => document.querySelector('#servicos')?.scrollIntoView({ behavior: 'smooth' })}
+                aria-label="Ver nossos serviços"
+              >
+                Nossos Serviços
+              </Button>
+            </div>
+
+            {/* Stats */}
+            <div className="grid grid-cols-3 gap-6">
+              <div className="text-center">
+                <div className="text-3xl font-bold text-primary mb-1">29+</div>
+                <div className="text-sm text-muted-foreground">Anos de Experiência</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-primary mb-1">500+</div>
+                <div className="text-sm text-muted-foreground">Clientes Atendidos</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-primary mb-1">24h</div>
+                <div className="text-sm text-muted-foreground">Tempo de Resposta</div>
+              </div>
+            </div>
           </div>
 
-          <div className="text-center p-6 rounded-lg bg-card border border-border hover:shadow-lg transition-shadow">
-            <div className="bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center mx-auto mb-4">
-              <Palette className="h-6 w-6 text-primary" />
-            </div>
-            <h3 className="text-xl font-semibold text-foreground mb-2">Design</h3>
-            <p className="text-muted-foreground">
-              Interfaces intuitivas e atraentes que proporcionam a melhor experiência do usuário.
-            </p>
-          </div>
+          {/* Visual */}
+          <div className="animate-slide-up">
+            <div className="relative">
+              {/* Card principal */}
+              <div className="bg-card border border-border rounded-2xl p-8 shadow-lg">
+                <div className="flex items-center mb-6">
+                  <div className="bg-primary/10 p-3 rounded-lg mr-4">
+                    <Users className="h-8 w-8 text-primary" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-foreground">
+                      Atendimento Personalizado
+                    </h3>
+                    <p className="text-muted-foreground">
+                      Nos tornamos parte da sua empresa
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="space-y-4">
+                  <div className="flex items-center">
+                    <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
+                    <span className="text-foreground">Consultoria especializada</span>
+                  </div>
+                  <div className="flex items-center">
+                    <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
+                    <span className="text-foreground">Planejamento tributário</span>
+                  </div>
+                  <div className="flex items-center">
+                    <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
+                    <span className="text-foreground">Gestão completa</span>
+                  </div>
+                </div>
 
-          <div className="text-center p-6 rounded-lg bg-card border border-border hover:shadow-lg transition-shadow">
-            <div className="bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center mx-auto mb-4">
-              <Zap className="h-6 w-6 text-primary" />
+                <div className="mt-6 pt-6 border-t border-border">
+                  <div className="flex items-center text-sm text-muted-foreground">
+                    <Clock className="h-4 w-4 mr-2" />
+                    Horário comercial: Segunda a sexta
+                  </div>
+                </div>
+              </div>
+
+              {/* Floating elements */}
+              <div className="absolute -top-4 -right-4 bg-primary text-primary-foreground rounded-xl p-4 shadow-lg">
+                <div className="text-2xl font-bold">CNPJ</div>
+                <div className="text-xs opacity-90">Regularizado</div>
+              </div>
             </div>
-            <h3 className="text-xl font-semibold text-foreground mb-2">Performance</h3>
-            <p className="text-muted-foreground">
-              Sites rápidos e otimizados para oferecer a melhor performance em todos os dispositivos.
-            </p>
           </div>
         </div>
       </div>
