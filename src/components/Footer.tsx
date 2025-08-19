@@ -8,11 +8,16 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo e Descrição */}
           <div className="col-span-1 md:col-span-2">
-            <div className="text-2xl font-bold text-primary mb-4">
-              Gnutzmann
-              <span className="block text-lg font-normal text-muted-foreground -mt-1">
-                Contabilidade e Consultoria
-              </span>
+            <div className="flex items-center mb-4">
+              <img 
+                src="/lovable-uploads/79f351fb-40b4-48cd-a0f7-49c5e5e1bec7.png" 
+                alt="Gnutzmann Contabilidade e Consultoria"
+                className="h-12 w-auto mr-3"
+              />
+              <div>
+                <div className="text-xl font-bold text-primary">Gnutzmann</div>
+                <div className="text-sm text-muted-foreground">Contabilidade e Consultoria</div>
+              </div>
             </div>
             <p className="text-muted-foreground mb-4 max-w-md leading-relaxed">
               Desde 1995 oferecendo serviços contábeis com proximidade e confiança. 

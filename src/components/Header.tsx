@@ -80,13 +80,18 @@ const Header = () => {
         <div className="flex justify-between items-center h-16">
           <Link 
             to="/" 
-            className="text-2xl font-bold text-primary hover:text-primary/90 transition-colors"
+            className="flex items-center hover:opacity-90 transition-opacity"
             aria-label="Página inicial da Gnutzmann Contabilidade"
           >
-            Gnutzmann
-            <span className="text-base font-normal text-muted-foreground block -mt-1">
-              Contabilidade
-            </span>
+            <img 
+              src="/lovable-uploads/79f351fb-40b4-48cd-a0f7-49c5e5e1bec7.png" 
+              alt="Gnutzmann Contabilidade e Consultoria"
+              className="h-10 w-auto"
+            />
+            <div className="ml-3 hidden sm:block">
+              <div className="text-xl font-bold text-primary">Gnutzmann</div>
+              <div className="text-sm text-muted-foreground -mt-1">Contabilidade</div>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
