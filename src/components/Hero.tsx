@@ -1,14 +1,25 @@
-
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Award, Users, Clock } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section id="inicio" className="relative pt-24 pb-20 lg:pt-32 lg:pb-32 bg-gradient-to-br from-primary/5 to-primary/10 overflow-hidden">
+    <section id="inicio" className="relative pt-24 pb-20 lg:pt-32 lg:pb-32 overflow-hidden">
+      {/* Background image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: "url('/lovable-uploads/9c7d3ef4-0dc8-4142-84a2-3c763f610905.png')"
+        }}
+      />
+      
+      {/* Overlay for better readability */}
+      <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/85 to-background/70"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-primary/5"></div>
+      
       {/* Background decoration */}
       <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
       
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
           <div className="animate-fade-in">
