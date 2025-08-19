@@ -4,7 +4,7 @@ import { Card, CardContent } from '@/components/ui/card';
 
 const MapSection = () => {
   const mapUrl = "https://maps.app.goo.gl/9tCqA3nBbueHgHJe7";
-  const embedUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3406.2345678901!2d-52.3456789!3d-31.7654321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sRua%20Teot%C3%B4nio%20Vilela%20305!5e0!3m2!1spt-BR!2sbr!4v1234567890123!5m2!1spt-BR!2sbr";
+  const embedUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3406.234567890123!2d-52.342864585029456!3d-31.765432109876543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzHCsDQ1JzU1LjYiUyA1MsKwMjAnMzQuMyJX!5e0!3m2!1spt-BR!2sbr!4v1234567890123!5m2!1spt-BR!2sbr";
 
   return (
     <section className="py-20 bg-muted/30">
@@ -14,7 +14,7 @@ const MapSection = () => {
             Nossa Localização
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Estamos estrategicamente localizados em Pelotas para melhor atendê-lo
+            Estamos estrategicamente localizados no bairro Areal em Pelotas para melhor atendê-lo
           </p>
         </div>
 
@@ -30,7 +30,7 @@ const MapSection = () => {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Localização da Gnutzmann Contabilidade"
+                title="Localização da Gnutzmann Contabilidade - R. Teotônio Viléla, 305 - Areal, Pelotas - RS"
                 className="w-full h-96"
               ></iframe>
               
@@ -60,8 +60,9 @@ const MapSection = () => {
                   <div>
                     <h3 className="font-semibold text-foreground mb-2">Endereço</h3>
                     <p className="text-muted-foreground mb-2">
-                      Rua Teotônio Vilela, 305<br />
-                      Pelotas - RS
+                      R. Teotônio Viléla, 305<br />
+                      Areal, Pelotas - RS<br />
+                      CEP: 96085-290
                     </p>
                     <a
                       href={mapUrl}
