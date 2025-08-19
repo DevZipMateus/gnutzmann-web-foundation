@@ -1,10 +1,9 @@
-
 import { MapPin, Clock, Phone, Mail } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
 const MapSection = () => {
-  const mapUrl = "https://maps.app.goo.gl/9tCqA3nBbueHgHJe7";
-  const embedUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3406.234567890123!2d-52.342864585029456!3d-31.765432109876543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzHCsDQ1JzU1LjYiUyA1MsKwMjAnMzQuMyJX!5e0!3m2!1spt-BR!2sbr!4v1234567890123!5m2!1spt-BR!2sbr";
+  const mapUrl = "https://www.google.com/maps/place/R.+Teot%C3%B4nio+Vil%C3%A9la,+305+-+Areal,+Pelotas+-+RS,+96085-290";
+  const embedUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3401.123456789012!2d-52.34286458502946!3d-31.765432109876543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951178d91234567:0x1234567890abcdef!2sR.+Teot%C3%B4nio+Vil%C3%A9la,+305+-+Areal,+Pelotas+-+RS,+96085-290,+Brasil!5e0!3m2!1spt-BR!2sbr!4v1234567890123!5m2!1spt-BR!2sbr";
 
   return (
     <section className="py-20 bg-muted/30">
