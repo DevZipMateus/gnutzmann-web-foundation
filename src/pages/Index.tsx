@@ -1,4 +1,3 @@
-
 import { useEffect } from 'react';
 import Hero from '@/components/Hero';
 import MapSection from '@/components/MapSection';
@@ -142,7 +141,7 @@ const Index = () => {
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-primary mb-2">500+</div>
-                  <div className="text-muted-foreground">Empresas Atendidas</div>
+                  <div className="text-muted-foreground">Clientes Atendidos</div>
                 </div>
               </div>
 
