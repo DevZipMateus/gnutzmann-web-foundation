@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import Hero from '@/components/Hero';
 import MapSection from '@/components/MapSection';
 import WhatsAppFloat from '@/components/WhatsAppFloat';
+import EgestorERP from '@/components/EgestorERP';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { 
@@ -305,6 +306,7 @@ const Index = () => {
         </div>
       </section>
 
+      <EgestorERP />
       <MapSection />
       <WhatsAppFloat />
     </div>
