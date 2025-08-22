@@ -71,7 +71,7 @@ const Header = () => {
               </a>
             </div>
             <div className="hidden md:block">
-              <span className="text-xs">Fundado em 1995 | CNPJ: 39.432.748/0001-07</span>
+              <span className="text-xs">Fundado em 1995 | CNPJ: 00.864.674/0001-34</span>
             </div>
           </div>
         </div>
