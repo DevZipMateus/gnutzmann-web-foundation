@@ -1,16 +1,11 @@
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Award, Users, Clock } from 'lucide-react';
-
 const Hero = () => {
-  return (
-    <section id="inicio" className="relative pt-24 pb-20 lg:pt-32 lg:pb-32 overflow-hidden">
+  return <section id="inicio" className="relative pt-24 pb-20 lg:pt-32 lg:pb-32 overflow-hidden">
       {/* Background image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: "url('/lovable-uploads/9c7d3ef4-0dc8-4142-84a2-3c763f610905.png')"
-        }}
-      />
+      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
+      backgroundImage: "url('/lovable-uploads/9c7d3ef4-0dc8-4142-84a2-3c763f610905.png')"
+    }} />
       
       {/* Overlay for better readability */}
       <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/85 to-background/70"></div>
@@ -44,23 +39,14 @@ const Hero = () => {
             
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
               <Button asChild size="lg" className="btn-primary">
-                <a 
-                  href="https://wa.me/5353984024960?text=Olá! Gostaria de conhecer os serviços da Gnutzmann Contabilidade."
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Falar conosco via WhatsApp"
-                >
+                <a href="https://wa.me/5353984024960?text=Olá! Gostaria de conhecer os serviços da Gnutzmann Contabilidade." target="_blank" rel="noopener noreferrer" aria-label="Falar conosco via WhatsApp">
                   Fale Conosco
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </a>
               </Button>
-              <Button 
-                variant="outline" 
-                size="lg" 
-                className="btn-outline"
-                onClick={() => document.querySelector('#servicos')?.scrollIntoView({ behavior: 'smooth' })}
-                aria-label="Ver nossos serviços"
-              >
+              <Button variant="outline" size="lg" className="btn-outline" onClick={() => document.querySelector('#servicos')?.scrollIntoView({
+              behavior: 'smooth'
+            })} aria-label="Ver nossos serviços">
                 Nossos Serviços
               </Button>
             </div>
@@ -125,16 +111,11 @@ const Hero = () => {
               </div>
 
               {/* Floating elements */}
-              <div className="absolute -top-4 -right-4 bg-primary text-primary-foreground rounded-xl p-4 shadow-lg">
-                <div className="text-2xl font-bold">CNPJ</div>
-                <div className="text-xs opacity-90">Regularizado</div>
-              </div>
+              
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
