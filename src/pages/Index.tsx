@@ -293,7 +293,7 @@ const Index = () => {
                 Agendar Reunião
               </a>
             </Button>
-            <Button asChild size="lg" variant="outline" className="btn-hero border-primary-foreground/60 text-primary-foreground hover:bg-primary-foreground/20 hover:text-primary-foreground">
+            <Button asChild size="lg" variant="outline" className="bg-primary-foreground/10 text-primary-foreground border-primary-foreground/60 hover:bg-accent hover:text-accent-foreground hover:border-accent">
               <a 
                 href="tel:53984024960"
                 aria-label="Ligar para a empresa"
