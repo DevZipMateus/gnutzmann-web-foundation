@@ -24,7 +24,7 @@ const Footer = () => {
               Nos tornamos parte da sua empresa para auxiliar nas melhores decisões.
             </p>
             <div className="text-sm text-muted-foreground">
-              <p>CNPJ: 39.432.748/0001-07</p>
+              <p>CNPJ: 00.864.674/0001-34</p>
               <p>CRC: [Registro no conselho]</p>
             </div>
           </div>
