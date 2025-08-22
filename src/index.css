@@ -125,10 +125,10 @@
 
   /* Botão para fundos escuros/transparentes */
   .btn-hero {
-    @apply bg-background/20 text-foreground border-background/60;
-    @apply hover:bg-background/30 hover:text-foreground hover:border-background/80;
-    @apply focus:bg-background/30 focus:text-foreground focus:border-background/80 focus:ring-2 focus:ring-background/20;
-    @apply active:bg-background/40 active:text-foreground active:border-background;
+    @apply bg-primary-foreground/20 text-primary-foreground border-primary-foreground/60;
+    @apply hover:bg-primary-foreground/30 hover:text-primary-foreground hover:border-primary-foreground/80;
+    @apply focus:bg-primary-foreground/30 focus:text-primary-foreground focus:border-primary-foreground/80 focus:ring-2 focus:ring-primary-foreground/20;
+    @apply active:bg-primary-foreground/40 active:text-primary-foreground active:border-primary-foreground;
     @apply backdrop-blur-sm transition-all duration-200;
   }
 
