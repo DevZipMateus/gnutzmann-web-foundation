@@ -1,3 +1,4 @@
+
 import { MapPin, Clock, Phone, Mail } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
@@ -135,8 +136,8 @@ const MapSection = () => {
                   <div>
                     <h3 className="font-semibold text-foreground mb-2">Horário de Funcionamento</h3>
                     <div className="text-muted-foreground space-y-1">
-                      <div>Segunda a Sexta: 8h às 18h</div>
-                      <div>Sábado: 8h às 12h</div>
+                      <div>Segunda a Sexta: 8h30 às 12h</div>
+                      <div>e das 13h45 às 18h</div>
                       <div className="text-sm opacity-75">Atendimento sob agendamento</div>
                     </div>
                   </div>

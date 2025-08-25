@@ -115,8 +115,8 @@ const Footer = () => {
               <li className="flex items-start text-muted-foreground text-sm">
                 <Clock className="h-4 w-4 mr-2 mt-0.5 text-primary flex-shrink-0" />
                 <span>
-                  Seg - Sex: 8h às 18h<br />
-                  Sáb: 8h às 12h
+                  Seg - Sex: 8h30 às 12h<br />
+                  e das 13h45 às 18h
                 </span>
               </li>
             </ul>
