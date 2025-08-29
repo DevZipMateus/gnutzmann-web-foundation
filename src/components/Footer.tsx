@@ -1,4 +1,3 @@
-
 import { Mail, Phone, MapPin, Clock } from 'lucide-react';
 
 const Footer = () => {
@@ -25,7 +24,7 @@ const Footer = () => {
             </p>
             <div className="text-sm text-muted-foreground">
               <p>CNPJ: 00.864.674/0001-34</p>
-              <p>CRC: [Registro no conselho]</p>
+              <p>CRC: RS-004955/O</p>
             </div>
           </div>
 
@@ -95,11 +94,11 @@ const Footer = () => {
               <li className="flex items-center text-muted-foreground text-sm">
                 <Phone className="h-4 w-4 mr-2 text-primary flex-shrink-0" />
                 <a 
-                  href="tel:53984024960" 
+                  href="tel:5332289666" 
                   className="hover:text-primary transition-colors"
                   aria-label="Ligar para a empresa"
                 >
-                  (53) 9 8402-4960
+                  (53) 3228-9666
                 </a>
               </li>
               <li className="flex items-center text-muted-foreground text-sm">

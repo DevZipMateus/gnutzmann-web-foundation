@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Phone, Mail } from 'lucide-react';
@@ -54,12 +53,12 @@ const Header = () => {
           <div className="flex justify-between items-center text-sm text-muted-foreground">
             <div className="flex items-center space-x-4">
               <a 
-                href="tel:53984024960" 
+                href="tel:5332289666" 
                 className="flex items-center hover:text-primary transition-colors"
                 aria-label="Telefone da empresa"
               >
                 <Phone className="h-3 w-3 mr-1" />
-                (53) 9 8402-4960
+                (53) 3228-9666
               </a>
               <a 
                 href="mailto:contato@gnutzmann.com.br" 

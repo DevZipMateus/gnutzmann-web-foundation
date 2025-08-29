@@ -1,4 +1,3 @@
-
 import { MapPin, Clock, Phone, Mail } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
@@ -19,7 +18,6 @@ const MapSection = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-          {/* Mapa */}
           <div className="order-2 lg:order-1">
             <div className="relative rounded-2xl overflow-hidden shadow-lg bg-card border border-border">
               <iframe
@@ -34,7 +32,6 @@ const MapSection = () => {
                 className="w-full h-96"
               ></iframe>
               
-              {/* Overlay com link para o mapa */}
               <div className="absolute bottom-4 left-4 right-4">
                 <a
                   href={mapUrl}
@@ -49,7 +46,6 @@ const MapSection = () => {
             </div>
           </div>
 
-          {/* Informações */}
           <div className="order-1 lg:order-2 space-y-6">
             <Card className="hover:shadow-md transition-shadow">
               <CardContent className="p-6">
@@ -87,11 +83,11 @@ const MapSection = () => {
                   <div>
                     <h3 className="font-semibold text-foreground mb-2">Telefone</h3>
                     <a
-                      href="tel:53984024960"
+                      href="tel:5332289666"
                       className="text-muted-foreground hover:text-primary transition-colors mb-2 block"
                       aria-label="Ligar para a empresa"
                     >
-                      (53) 9 8402-4960
+                      (53) 3228-9666
                     </a>
                     <a
                       href="https://wa.me/5353984024960?text=Olá! Gostaria de mais informações sobre os serviços."
@@ -100,7 +96,7 @@ const MapSection = () => {
                       className="text-primary hover:text-primary/80 text-sm font-medium"
                       aria-label="Enviar mensagem via WhatsApp"
                     >
-                      WhatsApp →
+                      WhatsApp: (53) 9 8402-4960 →
                     </a>
                   </div>
                 </div>
